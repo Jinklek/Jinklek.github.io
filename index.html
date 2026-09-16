@@ -32,7 +32,7 @@
         <img src="map.png" alt="Карта" usemap="#map">
         <map name="map">
             <area shape="rect" coords="74, 177, 226, 263" href="https://www.kubsu.ru/" alt="Прямоугольник">
-            <area shape="circle" coords="397 , 230, 60" href="./second.html" alt="Круг">
+            <area shape="circle" coords="397, 230, 60" href="./second.html" alt="Круг">
         </map>
     </li>
     <li><a href="">16 Ссылка с пустым href</a></li>
@@ -45,5 +45,54 @@
     </ol></li>
     <li><a href="ftp://login:password@server/file.pdf">21 Ссылка на FTP с авторизацией</a></li>
 </ul>
+<form action="/" method="POST">
+    <label>
+        ФИО: <br>
+        <input type="text" name="field-name" placeholder="Введите ФИО">
+    </label><br>
+    <label>
+        Телефон: <br>
+        <input type="tel" name="field-tel" placeholder="Введите номер телефона">
+    </label><br>
+    <label>
+        E-mail: <br>
+        <input type="email" name="field-email" placeholder="Введите почту">
+    </label><br>
+    <label>
+        Дата рождения:<br>
+        <input type="date" name="field-date">
+    </label><br>
+    Пол:
+    <label>
+        <input type="radio" name="field-gender" value="male"> Мужской
+    </label>
+    <label>
+        <input type="radio" name="field-gender" value="female"> Женский
+    </label><br>
+    <label>
+        Любимый язык программирования:<br>
+        <select name="field-proglang[]" multiple="multiple">
+            <option value="pascal">Pascal</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+            <option value="javascript">JavaScript</option>
+            <option value="php">PHP</option>
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="haskel">Haskel</option>
+            <option value="clojure">Clojure</option>
+            <option value="prolog">Prolog</option>
+            <option value="scala">Scala</option>
+        </select>
+    </label><br>
+    <label>
+        Биография:<br>
+        <textarea name="field-bio"></textarea>
+    </label><br>
+    <label>
+        <input type="checkbox" name="field-contract" value="yes">С контрактом ознакомлен(а)
+    </label><br>
+    <input type="submit" value="Сохранить">
+</form>
 </body>
 </html>
