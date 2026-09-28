@@ -8,12 +8,16 @@
 </head>
 <body>
 
-<header id="header">
-    <div class="container header-content">
-        <div class="logo-block">
-            <img src="image1.jpeg" alt="Логотип" class="logo-img">
-            <span>Задание 3</span>
-        </div>
+<div class="topbar">
+    <div class="container topbar-content">
+        <header id="header">
+            <div class="header-content">
+                <div class="logo-block">
+                    <img src="image1.jpeg" alt="Логотип" class="logo-img">
+                    <span>Задание 3</span>
+                </div>
+            </div>
+        </header>
 
         <nav id="nav">
             <ul>
@@ -23,7 +27,7 @@
             </ul>
         </nav>
     </div>
-</header>
+</div>
 
 <main class="container main-content">
     <section id="links" class="block">
@@ -120,14 +124,14 @@
 
     <section id="form" class="block">
         <h2>Форма</h2>
-        <form action="/" method="POST">
+        <form action="#" method="get">
             <label>
                 ФИО: <br>
-                <input type="text" name="field-name" placeholder="Введите ФИО">
+                <input type="text" name="field-name" placeholder="Введите ФИО" pattern="[А-Яа-яЁё\s-]+" title="Введите только буквы, пробелы и дефис" required>
             </label><br><br>
             <label>
                 Телефон: <br>
-                <input type="tel" name="field-tel" placeholder="Введите номер телефона">
+                <input type="tel" name="field-tel" placeholder="Введите номер телефона" pattern="[0-9\s+()-]+" title="Введите только цифры, пробелы, +, - и скобки" required>
             </label><br><br>
             <label>
                 E-mail: <br>
